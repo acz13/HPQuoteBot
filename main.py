@@ -102,7 +102,7 @@ while(True):
 
 			# s3 = S3Client(os.environ['REDDIT_PASSWORD'])
 			# s3='q2w345'
-			r.login('hpquotebot','q2w345',disable_warning=True)
+			r.login('[]','[]',disable_warning=True)
 			try:
 				threads=r.get_subreddit(sub_name).get_comments(limit=1)
 			except Exception as e:
