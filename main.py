@@ -100,8 +100,6 @@ while(True):
 			
 			r=praw.Reddit(user_agent="HPQUOTE/0.1 by anonymous853")
 
-			# s3 = S3Client(os.environ['REDDIT_PASSWORD'])
-			# s3='q2w345'
 			r.login('[]','[]',disable_warning=True)
 			try:
 				threads=r.get_subreddit(sub_name).get_comments(limit=1)
